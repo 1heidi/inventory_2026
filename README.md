@@ -1,5 +1,4 @@
 # GBC Biodata Inventory Update 2026
-Updates for the GBC Biodata Inventory
 
 ### Purpose: Repeat Methods to Provide an Update of the GBC Biodata Inventory
 

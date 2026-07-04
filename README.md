@@ -1,6 +1,6 @@
 # GBC Biodata Inventory Update 2026
 
-### Purpose: Repeat Methods to Provide an Update of the GBC Biodata Inventory
+### Purpose: Repeat Update for the GBC Biodata Inventory
 
 -   The GBC Biodata Inventory conducted in 2022 and repeated in 2024 using BERT-based methods to classify articles and extract predicted resource names. This update was done with the same methods, including trained models, to identify new biodata resources published in the literature in 2024 and 2025.
    

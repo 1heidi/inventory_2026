@@ -6,7 +6,7 @@
    
 ### Result: XXX New Resources Identified
 
-| Inventory Year | Years Covered | # Biodata Resources Found | Total Resources | Repo Link |
+| Inventory Year | Years Covered | # Biodata Resources Found | # Total Resources Found | Repo Link |
 | :--------: | :--------: | :--------: | :--------: | :--------: |
 | 2022 | 2011-2021 | 3112 | 3112 | <https://github.com/globalbiodata/inventory_2022> |
 | 2024 | 2022-2023 | 661 | 3773 | <https://github.com/globalbiodata/inventory_2024> |

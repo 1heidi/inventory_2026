@@ -16,6 +16,7 @@
 
 -   ***predictions_final_2024-07-12.csv*** last inventory, used as input for this update to compare and merge with newly identified resources
 -   ***predictions_V4.csv*** post manual review process
+    -   note: the ML pipeline outputs a file named predictions.csv for manual review and also inputs a file named predictions.csv post review to finish the pipeline; the file is temporarily renamed during the review steps to avoid confusion between versions
 -   ***predictions_final_XXXX.csv*** post complete pipeline
 
 ### Process:
@@ -24,18 +25,18 @@
 -   Created branch inventory_update_2026 for this exploratory effort
 -   Repeated ML pipeline using Google Colab, creating a heavily modified notebook via Gemini: updating_inventory_2026.ipyn
     -   Used modified config files and provided last inventory file as required
-    -   All other modifications to adapt pipeline done in the notebook **only**; no src files or otherwise were modified
-    -   Retained previously updated updating_inventory.ipyn untouched
+    -   **All other modifications to adapt pipeline done in the notebook only**; no src files or otherwise were modified
+    -   Retained previously updated updating_inventory.ipyn untouched for posterity
 -   **(new this year)** remove errant characters from encoding errors
-    -   intermediate file for manual review from the pipeline predictions.csv has encoding errors from special characters
+    -   predictions.csv = intermediate file for manual review from the pipeline, has encoding errors from special characters
     -   renamed to predictions.csv -\> predictions_raw_to_review.csv, used as input for deghost.R to clean
-    -   output named deghost_predictions_raw_to_review.csv and the renamed to predictions_V1 for manual review
+    -   output = deghost_predictions_raw_to_review.csv; renamed to predictions_V1 for manual review
 -   Completed manual review per [Manual Review Process for the Biodata Resource Inventory V2](https://doi.org/10.5281/zenodo.17644392)
     -   resulting in post manual review file: predictions_V4.csv
 -   **(new this year)** double check for encoding errors
-    -   run STEP_0_utf-8_verification.R
+    -   Run STEP_0_utf-8_verification.R
 -   Use STEP_1_precheck_manual_reviewed.R from 2024 update to check that all flagged IDs have been reviewed with appropriate values
--   Cleanup per 2024 update, resulting in file ***predictions_vXXX.csv***
+-   Saved file as **predictions.csv** to return to pipeline
 -   Completed post-processing pipeline to get the final inventory for 2011-2025, resulting in file ***predictions_final_XXXX.csv***
 
 ### Exploratory Analysis:

@@ -20,7 +20,7 @@
 ### Process:
 
 -   Started with updated [inventory_2022(main branch)](https://github.com/globalbiodata/inventory_2022)
--   Created branch inventory_update_2026 for this exploratory effort
+-   Created branch [inventory_update_2026](https://github.com/1heidi/inventory_2022/tree/inventory_update_2026) for this exploratory effort
 -   Repeated ML pipeline using Google Colab, creating a heavily modified notebook via Gemini: updating_inventory_2026.ipyn
     -   Updated config files and provided last inventory file, as required
     -   **All other modifications to adapt pipeline done in the notebook only**; no src files or otherwise were modified

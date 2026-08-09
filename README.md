@@ -7,7 +7,7 @@
 ### Result: 663 New Resources Identified for 2024 and 2025
 
 | Inventory Year | Years Covered | \# Found | Total | Repo Link | Inventory File |
-|:--:|:--:|:--:|:--:|:--:|:--:|
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 | 2022 | 2011-2021 | 3112 | 3112 | [inventory_2022](https://github.com/globalbiodata/inventory_2022) | final_inventory_2022.csv |
 | 2024 | 2022-2023 | 661 | 3773 | [inventory_2024](https://github.com/globalbiodata/inventory_2024) | predictions_final_2024-07-12.csv |
 | 2026 | 2024-2025 | 663 | 4436 | [you are here] | predictions_final_2026-08-07.csv |
@@ -44,14 +44,12 @@
         -   Checked intermediate output files for issues
         -   Query results very similar but not identical:
 
-::: {style="width: 90%; font-size: 12px; line-height: 1;"}
 | Step | 2024 obs | 2026 obs | diff obs | pub year range |
-|:--:|:--:|:--:|:--:|:--:|
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 01 query results | 4676 | 4597 | -79 | 2024: [2022-2023] & 2026: [2024-2025] |
 | 06 for manual review | 3904 | 4557 | 653 | 2024: [2011-2023] & 2026: [2011-2025] |
 | 08 processed manual review | 3773 | 4436 | 663 | 2024: [2011-2023] & 2026: [2011-2025] |
 | 13 processed countries | 3773 | 4436 | 663 | 2024: [2011-2023] & 2026: [2011-2025] |
-:::
 
 -   Analyzed new resources
     -   STEP_2_analyze_new_resources.R

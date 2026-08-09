@@ -103,6 +103,7 @@ new_c <- new_c %>%
   mutate(aug_affiliation_countries = strsplit(aug_affiliation_countries, ", ")) %>%
   unnest(aug_affiliation_countries) 
 
+## still some odd stuff
 new_c$aug_affiliation_countries[new_c$aug_affiliation_countries == "Georgia"] <- "United States"
 new_c$aug_affiliation_countries[new_c$aug_affiliation_countries == "Jersey"] <- "United States"
 new_c$aug_affiliation_countries[new_c$aug_affiliation_countries == "Turkey"] <- "Turkiye"

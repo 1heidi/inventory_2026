@@ -130,10 +130,10 @@ muc <-filter(new, new$extracted_url_country == "")
 muc <-filter(muc, muc$extracted_url_coordinates != "")
 muc <- select(muc, 1, 10, 11, 12, 13)
 ## remove errant "," at starts
-muc$extracted_url_coordinates <- sub("^[^\\(]+", "", muc$extracted_url_coordinates)
-muc <- muc %>% mutate_all(na_if,"")
+## muc$extracted_url_coordinates <- sub("^[^\\(]+", "", muc$extracted_url_coordinates)
+## muc <- muc %>% mutate_all(na_if,"")
 ## filter again to remove emptied values
-muc <- filter(muc, muc$extracted_url_coordinates != "")
+## muc <- filter(muc, muc$extracted_url_coordinates != "")
 muc <- separate(data = muc, col = extracted_url_coordinates, into = c("left", "right", "left2", "right2"), sep = ",")
 ## just retrieving for first url
 muc <- select(muc, -"left2", -"right2") 

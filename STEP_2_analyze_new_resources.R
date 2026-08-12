@@ -164,6 +164,13 @@ new3 <- new3 %>% select(-ends_with(".y"))
 new3 <- select(new3,1:11, 13, 23, 14:20)
 new_c <- new3
 
+new_c$aug_affiliation_countries[new_c$aug_affiliation_countries == "USA"] <- "United States"
+new_c$aug_affiliation_countries[new_c$aug_affiliation_countries == "UK"] <- "United Kingdom"
+new_c$aug_extracted_url_country[new_c$aug_extracted_url_country == "USA"] <- "United States"
+new_c$aug_extracted_url_country[new_c$aug_extracted_url_country == "UK"] <- "United Kingdom"
+
+
+United States, United States
 write.csv(new_c, "new_biodata_resources_2026_augmented.csv", row.names = FALSE)
 
 ##=============================================================##

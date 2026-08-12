@@ -47,15 +47,9 @@
 | Step | 2024 obs | 2026 obs | diff obs | pub year range |
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 01 query results | 4676 | 4597 | -79 | 2024: [2022-2023] & 2026: [2024-2025] |
-| 06 for manual review | 3904 | 4557 | 653 | 2024: [2011-2023] & 2026: [2011-2025] |
 | 08 processed manual review | 3773 | 4436 | 663 | 2024: [2011-2023] & 2026: [2011-2025] |
 | 13 processed countries | 3773 | 4436 | 663 | 2024: [2011-2023] & 2026: [2011-2025] |
 
--   Analyzed new resources
+-   Prelim analysis of new resources
     -   STEP_2_analyze_new_resources.R
-    -   Author affiliation (total occurrences; may be \>1 per article)
-    -   URL geocoordinates
-    -   As last update, augmented w/ additional packages/scripts for better coverage
-        -   as is: new_biodata_resources_2026_unaugmented.csv
-        -   with additional coverage: new_biodata_resources_2026_augmented.csv
-            -   Top 5 Countries via Author Affiliations:
+        -   As for last update, augmented w/ additional packages/scripts for better coverage just using R packages -- resulting analysis and data viz also helped confirm differences between the 2024 and 2026 updates. However, see upgraded work done for [GBC publication anlaysis](https://github.com/globalbiodata/gbc-publication-analysis), which used the [locationtagger](https://github.com/kaushiksoni10/locationtagger) Python module for see affiliation addresses.

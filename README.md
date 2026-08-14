@@ -54,5 +54,6 @@
 
 -   Prelim analysis of new resources
     -   STEP_2_analyze_new_resources.R
-        -   As for last update, augmented w/ additional packages/scripts for better coverage just using R packages -- resulting analysis also helped confirm appropropriate/expected differences between the 2024 and 2026 updates. For better results, see upgraded work done for [GBC publication anlaysis](https://github.com/globalbiodata/gbc-publication-analysis), which used the [locationtagger](https://github.com/kaushiksoni10/locationtagger) Python module for see affiliation addresses.
-        -   Generated CSVs of just new resources found in both unaugmented form (no additional attempts to pull country for URLs and affiliation) and augmented forms (light scripting to improve coverage from ML pipeline ouput)
+        -   As for last update, augmented w/ additional packages/scripts for better coverage just using R packages/light scripting -- resulting analysis also helped confirm appropropriate/expected differences between the 2024 and 2026 updates
+        -   Generated CSVs of just new resources found in both unaugmented form (no additional attempts to pull country for URLs and affiliation) and augmented forms
+        -    For better results, see upgraded work done for [GBC publication anlaysis](https://github.com/globalbiodata/gbc-publication-analysis) which used the [locationtagger](https://github.com/kaushiksoni10/locationtagger) Python module
